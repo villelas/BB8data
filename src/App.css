@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  position: relative;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0; /* Keep this layer behind the content */
+  overflow: hidden; /* Prevent any background overflow */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-layer {
+  position: relative;
+  z-index: 1; /* Make sure content is above the background */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.header-content {
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-title {
+  color: #33cccc; /* Bright cyan color */
+  font-size: 3rem; /* Large font size for visibility */
+  font-weight: 700; /* Bold weight */
+  margin: 0;
+}
+
+.header-subtitle {
+  color: #ffffff; /* White for good contrast */
+  font-size: 1.5rem; /* Slightly smaller than the title */
+  margin-top: 10px;
+}
+
+/* Chat Now Button Style */
+.chat-now-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #33cccc; /* Bright cyan color */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 30px; /* Rounded button */
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.chat-now-button:hover {
+  background-color: #1e90ff; /* Lighter blue on hover */
+  box-shadow: 0px 15px 20px rgba(30, 144, 255, 0.4);
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.chat-now-button:active {
+  transform: translateY(2px); /* Button presses down slightly */
+}
+
+/* Grey Section Style */
+.grey-section {
+  height: 100vh; /* Full screen height */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center children horizontally */
+  padding: 25px; /* Add padding around the edges */
+  overflow-y: auto;
+}
+
+
+.header-container {
+  width: 100%; /* Full width for centering purposes */
+  text-align: left; /* Center the header horizontally */
+  position: relative; /* Position the header at the top */
+  top: 0; /* Align the header to the top */
+  padding-top: 30px; /* Add some padding to prevent it from sticking to the very top */
+}
+
+
+.grey-section-text {
+  color: whitesmoke; /* Black text for contrast */
+  font-size: 2.5rem; /* Increase the font size */
+  font-weight: 500; /* Make the text bold */
+  line-height: 1; /* Adjust line height for better spacing */
 }
