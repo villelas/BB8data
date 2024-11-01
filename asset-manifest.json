@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/BB8chat/static/css/main.4989a554.css",
-    "main.js": "/BB8chat/static/js/main.529cb20e.js",
-    "static/media/user.png": "/BB8chat/static/media/user.4eddcc79e0488c03d196.png",
-    "static/media/bb8.webp": "/BB8chat/static/media/bb8.90eb25dc10cfd17d45c2.webp",
-    "index.html": "/BB8chat/index.html",
-    "main.4989a554.css.map": "/BB8chat/static/css/main.4989a554.css.map",
-    "main.529cb20e.js.map": "/BB8chat/static/js/main.529cb20e.js.map"
+    "main.css": "/BB8data/static/css/main.4989a554.css",
+    "main.js": "/BB8data/static/js/main.18d7e898.js",
+    "static/media/user.png": "/BB8data/static/media/user.4eddcc79e0488c03d196.png",
+    "static/media/bb8.webp": "/BB8data/static/media/bb8.90eb25dc10cfd17d45c2.webp",
+    "index.html": "/BB8data/index.html",
+    "main.4989a554.css.map": "/BB8data/static/css/main.4989a554.css.map",
+    "main.18d7e898.js.map": "/BB8data/static/js/main.18d7e898.js.map"
   },
   "entrypoints": [
     "static/css/main.4989a554.css",
-    "static/js/main.529cb20e.js"
+    "static/js/main.18d7e898.js"
   ]
 }
