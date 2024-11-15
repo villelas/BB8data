@@ -22,3 +22,4 @@ tqdm==4.66.5
 typing_extensions==4.12.2
 uvicorn==0.31.0
 watchfiles==0.24.0
+python-multipart==0.0.6
