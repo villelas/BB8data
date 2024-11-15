@@ -5,6 +5,8 @@ import userAvatar from './images/user.png'; // Example import for user avatar
 import { VegaLite } from 'react-vega'; // Import VegaLite for chart rendering
 import Spinner from './Spinner'; // Import Spinner component
 
+
+const API_URL = "https://bb8dataagent.onrender.com";
 const ChatInterface = () => {
   const [message, setMessage] = useState('');
   const [chatHistory, setChatHistory] = useState([]);
@@ -62,7 +64,7 @@ const ChatInterface = () => {
     setChatHistory((prev) => limitChatHistory([...prev, loadingMessage]));
 
     try {
-        const response = await fetch('http://localhost:8000/query', {
+        const response = await fetch('${API_URL}/query', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ prompt: message }),
