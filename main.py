@@ -260,3 +260,8 @@ async def query_openai(request: QueryRequest):
 
     except Exception as e:
         return QueryResponse(visualization=None, description=f"The requested visualization could not be generated due to formatting issues")
+
+
+@app.get("/")
+async def root():
+    return {"message": "Welcome to the FastAPI Backend"}
