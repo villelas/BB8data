@@ -17,7 +17,7 @@ app = FastAPI()
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://villelas.github.io/BB8data/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
