@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import * as d3 from 'd3-dsv';
 
+
+const API_URL = "https://bb8dataagent.onrender.com"
 const DataVisualizer = ({ setCsvData }) => {
   const [file, setFile] = useState(null);
   const [error, setError] = useState('');
@@ -31,7 +33,7 @@ const DataVisualizer = ({ setCsvData }) => {
         
         // successful run on local host we haven't run backend in render yet 
         try {
-          const response = await fetch('http://localhost:8000/upload-csv', {
+          const response = await fetch('${API_URL}/upload-csv', {
             method: 'POST',
             body: formData,
           });
